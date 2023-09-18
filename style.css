@@ -1,0 +1,79 @@
+:root {
+    --light-blue: #b8ceff;
+    --dark-blue: #1947b2;
+}
+
+* {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--light-blue);
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav > ul > li > div > a {
+    box-shadow: inset 0 0 0 0 var(--dark-blue);
+    font-weight: bold;
+    font-size: 6em;
+    color: black;
+
+}
+
+/* Box animation*/
+nav > ul > li > div > a {
+    transition: color .5s ease-in-out, box-shadow .5s ease-out;
+}
+
+nav > ul > li > div > a:hover {
+    box-shadow: inset 10em 0 0 0 var(--dark-blue);
+    color: var(--light-blue);
+}
+
+/* Border line on the left*/
+nav {
+    border-left: black 3px solid;
+    padding: 1em 0 1em 1em
+}
+
+/* On main page holds left and right container for separation*/
+#main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* Introduction/credentials*/
+#left-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#left-side > div {
+    margin: auto;
+    width: 60%
+
+}
+
+#right-side {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
