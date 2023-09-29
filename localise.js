@@ -20,7 +20,6 @@ async function getTranslation() {
 
 async function loadLang() {
     let translation = await getTranslation();
-    console.log(translation);
     document.querySelectorAll("[data-lang]").forEach(elem => {
         let item = elem.getAttribute("data-lang") || "placeholder";
         elem.textContent = translation[item];

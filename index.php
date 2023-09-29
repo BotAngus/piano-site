@@ -7,53 +7,93 @@
     <title>Piano Site</title>
     <link rel="stylesheet" href="style.css">
     <script src="localise.js"></script>
+    <style>
+        .landing-page {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-pretty > div {
+            text-shadow: 5px 5px var(--highlight);
+            font-size: 8vw;
+        }
+
+        .name-pretty {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-pretty .slight-offset {
+            padding-left: 10vw;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .intro-text {
+            margin: 0 auto 0 auto;
+            padding: 1vw;
+            width: 50%;
+        }
+
+        .intro-text p {
+            padding: 1rem;
+        }
+
+        .intro-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+        }
+
+
+        .intro-links > a {
+            text-decoration: underline;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            font-size: 1.5vw;
+            font-weight: bold;
+            box-shadow: inset 0 0 0 0 var(--shadow);
+            /*border: 3px solid var(--shadow);*/
+            transition: color 1s ease-in-out, box-shadow 0.5s ease-in-out;
+        }
+
+
+        .intro-links > a:hover {
+            box-shadow: inset 10em 0 0 0 var(--shadow);
+            color: var(--main);
+        }
+
+
+    </style>
 </head>
 <body>
-<div id="main-container">
-    <div id="left-side">
-        <div>
-            <h2>Suzanne Spanjaard</h2>
-            <p>
-                Piano docent in Veldhoven
-            </p>
-            <div style="padding-top:1rem;"></div>
-            <p>
-                De piano is een fantastisch instrument.
-                Je kunt er mee begeleiden, solospelen, je hart uitstorten, een feestje opvrolijken, je zinnen verzetten,
-                nieuwe werelden ontdekken....
-                Alleen, het gaat niet vanzelf.
-            </p>
-            <div style="padding-top:1rem;"></div>
-            <p>
-                Of je nu voor het eerst aan de piano zit of al jarenlang speelt
-                en een specifieke vaardigheid wilt verbeteren, ik help je graag
-                verder. Tijdens de lessen verdeel ik mijn aandacht over muzikale,
-                technische en harmonische aspecten van de stukken die je speelt.
-                Aan bod komen ook de verschillen in stijl en vorm en hoe je het
-                meest efficiënt kunt studeren. Improvisatie is een hulpmiddel dat
-                ik vaak gebruik om je zowel inzicht als handigheid te geven in
-                problemen die je tegenkomt. De instructies die ik geef zijn
-                toegespitst op wat jij wilt bereiken.
-            </p>
-            <div style="padding-top:1rem;"></div>
-            <p>
-                Waar ik naar streef is dat jij je eigen pianocoach wordt,
-                zodat je precies weet wat je wilt op de piano en hoe je dat
-                kunt bereiken. In de ruim 25 jaar dat ik pianodocente ben heb
-                ik aardig wat lesmateriaal ontwikkeld. Dit én mijn enthousiasme
-                en ervaring staan tot je beschikking bij jouw weg door de wereld
-                van piano en muziek.
-            </p>
-        </div>
+<?php include "nav.php" ?>
+<div class="landing-page">
+    <div class="name-pretty">
+        <div class="decoration-circle">Suzanne</div>
+        <div class="slight-offset">Spanjaard</div>
     </div>
-    <div id="right-side">
-        <nav>
-            <a href="./pricing" data-lang="pricing"></a>
-            <a href="./contact" data-lang="contact"></a>
-            <a href="./about" data-lang="about"></a>
-            <a href="./events" data-lang="events"></a>
-            <a href="./lesson" data-lang="lesson"></a>
-        </nav>
+    <div class="intro">
+        <div class="intro-text">
+            <p data-lang="intro1"></p>
+            <p data-lang="intro2"></p>
+            <p data-lang="intro3"></p>
+        </div>
+        <div class="intro-links">
+            <a href="/about">
+                Over Mij
+            </a>
+            <a href="/pricing">
+                Tarieven
+            </a>
+            <a href="/contact">
+                Contact
+            </a>
+        </div>
     </div>
 </div>
 </body>
