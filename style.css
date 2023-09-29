@@ -1,18 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 :root {
-    --light-blue: #b8ceff;
-    --dark-blue: #1947b2;
+    --light-blue: #48cae4;
+    --dark-blue: #1f3d70;
+    --background-color: #b4d0dc;
 }
+
 
 * {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: 'Lora', serif;
 }
 
 body {
     width: 100vw;
     height: 100vh;
-    background: var(--light-blue);
+    background: var(--background-color);
 }
 
 
@@ -20,60 +25,80 @@ a {
     text-decoration: none;
 }
 
-ul {
-    list-style: none;
+nav {
+    display: flex;
+    flex-direction: column;
 }
-
-nav > ul > li > div > a {
+nav  > a {
     box-shadow: inset 0 0 0 0 var(--dark-blue);
     font-weight: bold;
-    font-size: 6em;
+    font-size: 5vw;
     color: black;
 
 }
 
 /* Box animation*/
-nav > ul > li > div > a {
-    transition: color .5s ease-in-out, box-shadow .5s ease-out;
+nav  > a {
+    transition: color 1s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
-nav > ul > li > div > a:hover {
+nav  > a:hover {
     box-shadow: inset 10em 0 0 0 var(--dark-blue);
-    color: var(--light-blue);
+    color: var(--background-color);
 }
 
-/* Border line on the left*/
-nav {
-    border-left: black 3px solid;
-    padding: 1em 0 1em 1em
-}
 
 /* On main page holds left and right container for separation*/
 #main-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
 }
 
 /* Introduction/credentials*/
 #left-side {
-    width: 100%;
-    height: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 #left-side > div {
     margin: auto;
-    width: 60%
+    padding-left: 7vw;
+    padding-right: 3vw;
+    font-size: 1rem;
 
 }
 
 #right-side {
-    width: 100%;
-    height: 100%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+@media (max-width: 600px) {
+    #main-container {
+        flex-direction: column-reverse;
+        padding-top: 1rem;
+        justify-content: space-between;
+    }
+    #right-side {
+        /*display: flex;*/
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex:0.1;
+        padding: 1rem 1rem 0 1rem;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 2;
+        justify-content: space-around;
+        padding: 0;
+    }
 }
