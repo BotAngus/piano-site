@@ -3,96 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Piano Site</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="localise.js"></script>
-    <style>
-        .landing-page {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .name-pretty > div {
-            text-shadow: 5px 5px var(--highlight);
-            font-size: 8vw;
-        }
-
-        .name-pretty {
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .name-pretty .slight-offset {
-            padding-left: 10vw;
-        }
-
-        .intro {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .intro-text {
-            margin: 0 auto 0 auto;
-            padding: 1vw;
-            width: 50%;
-        }
-
-        .intro-text p {
-            padding: 1rem;
-        }
-
-        .intro-links {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            margin: auto;
-        }
-
-
-        .intro-links > a {
-            text-decoration: underline;
-            padding: 0.5rem 1rem 0.5rem 1rem;
-            font-size: 1.5vw;
-            font-weight: bold;
-            box-shadow: inset 0 0 0 0 var(--shadow);
-            /*border: 3px solid var(--shadow);*/
-            transition: color 1s ease-in-out, box-shadow 0.5s ease-in-out;
-        }
-
-
-        .intro-links > a:hover {
-            box-shadow: inset 10em 0 0 0 var(--shadow);
-            color: var(--main);
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="output.css">
+    <script src="live.js"></script>
+    <script src="localise.js" defer></script>
 </head>
-<body>
-<?php include "nav.php" ?>
-<div class="landing-page">
-    <div class="name-pretty">
-        <div class="decoration-circle">Suzanne</div>
-        <div class="slight-offset">Spanjaard</div>
+<body class="flex h-screen w-screen flex-row justify-center align-middle">
+<div class="flex flex-1 flex-col justify-center align-middle">
+    <div class="mx-auto border-b-2 border-solid border-black pr-4 pb-2 pl-4">
+        <div class="text-4xl font-bold">
+            Suzanne
+        </div>
+        <div class="before:m-4 text-4xl font-bold">
+            Spanjaard
+        </div>
+        <div class="italic pt-4">
+            Piano Docent in Veldhoven
+        </div>
     </div>
-    <div class="intro">
-        <div class="intro-text">
+
+    <div class="lg:hidden flex flex-col justify-center text-center align-middle font-sans">
+        <div class="[&>p]:p-4 flex flex-col">
             <p data-lang="intro1"></p>
+        </div>
+    </div>
+    <nav class="flex flex-col justify-center text-center align-middle font-sans text-2xl">
+        <div class="mx-auto flex flex-col  [&>a]:pb-4 [&>a]:pt-4 [&>a]:underline">
+            <a href="./contact" class="transition hover:-translate-y-1 hover:scale-110">Contact</a>
+            <a href="./pricing" class="transition hover:-translate-y-1 hover:scale-110">Tarieven</a>
+            <a href="./about" class="transition hover:-translate-y-1 hover:scale-110">Over Mij</a>
+            <a href="./lesson" class="transition hover:-translate-y-1 hover:scale-110">Lessen</a>
+        </div>
+    </nav>
+</div>
+<div class="hidden flex-1 text-center lg:flex">
+    <div class="flex flex-col justify-center align-middle">
+        <div class="mx-auto w-1/2 text-left [&>p]:p-1">
+            <h2 class="p-1 text-2xl font-bold">De Piano</h2>
+            <p class="border-t-2 border-black border-solid" data-lang="intro1"></p>
             <p data-lang="intro2"></p>
             <p data-lang="intro3"></p>
-        </div>
-        <div class="intro-links">
-            <a href="/about">
-                Over Mij
-            </a>
-            <a href="/pricing">
-                Tarieven
-            </a>
-            <a href="/contact">
-                Contact
-            </a>
         </div>
     </div>
 </div>
