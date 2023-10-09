@@ -10,8 +10,8 @@
 </head>
 <body class="bg-slate-200">
 <?php include "nav.php" ?>
-<main class="my-4 [&_p]:text-justify flex flex-col lg:flex-row justify-center">
-    <div class="m-4 py-2 [&>p]:my-4 lg:w-[40%] lg:bg-white lg:px-8 rounded-xl">
+<main class="[&_p]:text-justify flex flex-col lg:flex-row justify-center">
+    <div class="mx-4 mb-4 py-2 [&>p]:my-4 lg:w-[40%] lg:bg-white lg:px-8">
         <h1 class="text-2xl font-bold">Lesruimte</h1>
         <div class="py-4">
             <p>

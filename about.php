@@ -14,7 +14,7 @@
     <div class="flex flex-col lg:w-[40%] lg:bg-white">
         <div class="flex row justify-center">
             <div class="lg:p-8">
-                <h1 class="text-4xl font-bold text-left mx-auto">Over Mijzelf</h1>
+                <h1 class="text-4xl font-bold text-left mx-auto mt-4">Over Mijzelf</h1>
                 <div class="flex flex-col text-left [&>p]:mt-6 mx-auto">
                     <p>Toen ik 6 jaar was kwam er tot mijn verrukking een piano in huis.
                         Mijn moeder speelde daarop en ze zong

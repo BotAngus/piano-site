@@ -11,7 +11,7 @@
 <body class="bg-slate-200">
 <?php include "nav.php" ?>
 <main class="flex h-full w-full justify-center">
-    <div class="m-4 flex flex-col lg:w-1/2 lg:bg-white lg:p-4 lg:rounded">
+    <div class="mx-4 mb-4 flex flex-col lg:w-1/2 lg:bg-white lg:p-4 lg:rounded">
         <div class="my-4 [&>p]:mt-4">
             <h1 class="text-left text-4xl font-bold">Tarieven</h1>
             <p>Voor volwassen leerlingen geldt het tarief van de <a class="underline"
