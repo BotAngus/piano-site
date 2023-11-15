@@ -11,7 +11,7 @@
 <body class="bg-slate-200">
 <?php include "nav.php" ?>
 <main class="[&_p]:text-justify flex flex-col lg:flex-row justify-center">
-    <div class="mb-4 mx-4 py-2 [&>div]:my-4 lg:w-[40%] lg:bg-white lg:px-8">
+    <div class="mb-4 mx-4 py-2 [&>div]:my-4 lg:w-[70%] lg:bg-white lg:px-8">
         <h1 class="text-2xl font-bold">Activiteiten</h1>
         <div>
             <h2 class="text-xl font-bold">Voorspeelavond

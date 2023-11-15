@@ -8,15 +8,15 @@
     <script src="live.js"></script>
     <script src="localise.js" defer></script>
 </head>
-<body class="bg-slate-200 h-screen overflow-clip">
+<body class="bg-slate-200 h-screen">
 <?php include "nav.php" ?>
-<main class="flex h-full">
+<main class="flex h-full flex-col">
     <div class="flex flex-1 flex-col justify-center align-middle">
         <div class="mx-auto border-b-2 border-solid border-black pr-4 pb-2 pl-4">
-            <div class="text-4xl font-bold">
+            <div class="text-8xl font-bold">
                 Suzanne
             </div>
-            <div class="before:m-4 text-4xl font-bold">
+            <div class="before:m-8 text-8xl font-bold">
                 Spanjaard
             </div>
             <div class="italic pt-4">

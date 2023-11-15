@@ -11,7 +11,7 @@
 <body class="bg-slate-200">
 <?php include "nav.php" ?>
 <main class="px-4 flex flex-row justify-center">
-    <div class="flex flex-col lg:w-[40%] lg:bg-white">
+    <div class="flex flex-col lg:w-[70%] lg:bg-white">
         <div class="flex row justify-center">
             <div class="lg:p-8">
                 <h1 class="text-4xl font-bold text-left mx-auto mt-4">Over Mijzelf</h1>

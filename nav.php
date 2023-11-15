@@ -24,10 +24,10 @@
     [&>a]:py-2 [&>a]:pl-4 [&>a]:text-white">
         <a href="/">Home</a>
         <a href="about">Over Mijzelf</a>
-        <a href="/contact">Contact</a>
         <a href="/pricing">Tarieven en Lestijden</a>
         <a href="/room">Lesruimte</a>
         <a href="/content">Lesinhoud</a>
         <a href="/events">Activiteiten</a>
+        <a href="/contact">Contact</a>
     </nav>
 </header>

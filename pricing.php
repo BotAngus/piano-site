@@ -11,7 +11,7 @@
 <body class="bg-slate-200">
 <?php include "nav.php" ?>
 <main class="flex h-full w-full justify-center">
-    <div class="mx-4 mb-4 flex flex-col lg:w-1/2 lg:bg-white lg:p-4 lg:rounded">
+    <div class="mx-4 mb-4 flex flex-col lg:w-[70%] lg:bg-white lg:p-4 lg:rounded">
         <div class="my-4 [&>p]:mt-4">
             <h1 class="text-left text-4xl font-bold">Tarieven</h1>
             <p>Voor volwassen leerlingen geldt het tarief van de <a class="underline"
@@ -24,17 +24,17 @@
 
             <p>Een proefles – of de eerste les - is gratis.</p>
 
-            <p>Voor het seizoen 2023/2024 is het KNTV tarief € 49,- per uur.</p>
+            <p>Voor het seizoen 2023/2024 is het KNTV tarief € 1- per uur.</p>
 
             <table class="my-4 table-auto">
                 <tbody>
                 <tr>
                     <td>Volwassenen</td>
-                    <td>€ 147,- per maand</td>
+                    <td>€ 1,- per maand</td>
                 </tr>
                 <tr>
                     <td>Kinderen en studenten</td>
-                    <td>€ 110,- per maand</td>
+                    <td>€ 1,- per maand</td>
                 </tr>
                 </tbody>
             </table>
