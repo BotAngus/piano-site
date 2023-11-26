@@ -1,4 +1,0 @@
-Last Update: 2023/10/09
-Language: Dutch/English
-Doctype: PHP8
-IDE: PhpStorm
