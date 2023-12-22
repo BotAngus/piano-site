@@ -6,11 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="live.js"></script>
-    <link rel="stylesheet" href="style.php">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-<?php include "nav.php" ?>
+<?php
+require_once "conn.php";;
+include "nav.php";
+?>
 <main>
     <div class="name">
         <div class="first-name">Suzanne</div>
@@ -31,9 +34,9 @@
             jij wilt bereiken.
         </p>
         <p>
-            Waar ik naar streef is dat jij je eigen pianocoach wordt, zodat je precies weet wat je wilt op de piano en
-            hoe je dat kunt bereiken. In de ruim 25 jaar dat ik pianodocente ben heb ik aardig wat lesmateriaal
-            ontwikkeld. Dit én mijn enthousiasme en ervaring staan tot je beschikking bij jouw weg door de wereld van
+            Waar ik naar streef, is dat jij je eigen pianocoach wordt, zodat je precies weet wat je wilt op de piano en
+            hoe je dat kunt bereiken. In de ruim 25 jaar dat ik pianodocente ben, heb ik aardig wat lesmateriaal
+            ontwikkeld. Dit én mijn enthousiasme en ervaring staan tot je beschikking bij jou weg door de wereld van
             piano en muziek.
 
         </p>

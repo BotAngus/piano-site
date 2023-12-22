@@ -16,7 +16,23 @@
         el.addEventListener("click", () => toggleNav())
     })
 </script>
+<style>
+    #nav {
+        background: linear-gradient(
+                45deg,
+<?php
 
+    require_once "conn.php";
+    $stmt = $conn->prepare("SELECT nav1, nav2 FROM config WHERE name='style'");
+    $stmt->bind_result($nav1, $nav2);
+    $stmt->execute();
+    $stmt->fetch();
+    echo $nav1 . ", " . $nav2;
+    $stmt->close()
+?>
+    );
+    }
+</style>
 <header id="nav-container">
     <div id="nav-vis">
         <div id="home">
@@ -41,11 +57,11 @@
     </div>
     <nav id="nav" class="nav-collapsed">
         <a href="/">Home</a>
-        <a href="/route.php?=about">Over Mijzelf</a>
-        <a href="/route.php?=pricing">Tarieven en Lestijden</a>
-        <a href="/route.php?=room">Lesruimte</a>
-        <a href="/route.php?=content">Lesinhoud</a>
-        <a href="/route.php?=events">Activiteiten</a>
-        <a href="/route.php?=contact">Contact</a>
+        <a href="/route.php?route=about">Over Mijzelf</a>
+        <a href="/route.php?route=pricing">Tarieven en Lestijden</a>
+        <a href="/route.php?route=room">Lesruimte</a>
+        <a href="/route.php?route=content">Lesinhoud</a>
+        <a href="/route.php?route=events">Activiteiten</a>
+        <a href="/route.php?route=contact">Contact</a>
     </nav>
 </header>
