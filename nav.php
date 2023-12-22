@@ -41,11 +41,11 @@
     </div>
     <nav id="nav" class="nav-collapsed">
         <a href="/">Home</a>
-        <a href="/about">Over Mijzelf</a>
-        <a href="/pricing">Tarieven en Lestijden</a>
-        <a href="/room">Lesruimte</a>
-        <a href="/content">Lesinhoud</a>
-        <a href="/events">Activiteiten</a>
-        <a href="/contact">Contact</a>
+        <a href="/route.php?=about">Over Mijzelf</a>
+        <a href="/route.php?=pricing">Tarieven en Lestijden</a>
+        <a href="/route.php?=room">Lesruimte</a>
+        <a href="/route.php?=content">Lesinhoud</a>
+        <a href="/route.php?=events">Activiteiten</a>
+        <a href="/route.php?=contact">Contact</a>
     </nav>
 </header>

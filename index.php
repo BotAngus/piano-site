@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="live.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.php">
     <title>Document</title>
 </head>
 <body>

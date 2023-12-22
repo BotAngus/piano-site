@@ -1,3 +1,5 @@
+<?php header("Content-type: text/css"); ?>
+
 /*
 Mobile First
 PC Second
@@ -22,7 +24,7 @@ Navigation CSS
     overflow: hidden;
     transition: max-height 0.50s linear;
     transition-delay: 0s;
-    background: var(--nav);
+    background: linear-gradient(45deg <?php ?>);
     /*position: sticky;*/
     width: 100%;
 }
@@ -143,12 +145,13 @@ and (min-device-width: 1200px) {
     }
 
     .first-name {
-        margin: auto;
+        /*margin: auto;*/
+        text-align: center;
     }
 
     .sur-name {
-        margin: auto;
-        padding-left: 5rem;
+        /*margin: auto;*/
+        text-align: center;
     }
 
     .small-intro-index {
